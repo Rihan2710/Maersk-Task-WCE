@@ -2,6 +2,8 @@
 
 Craftify is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
 
+# We are live 
+https://rihan2710.github.io/Maersk-Task-WCE/
 ## Demo
 
 ![Craftify Desktop Demo](./WebDemo.PNG "Desktop Demo")
