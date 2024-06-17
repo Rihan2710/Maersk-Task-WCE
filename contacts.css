@@ -1,0 +1,107 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.information, .contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.information h2, .contact-form h2 {
+    margin-top: 0;
+}
+
+.information ul {
+    list-style: none;
+    padding: 0;
+}
+
+.information ul li {
+    margin: 10px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: var(--salmon-pink);
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: rgb(255, 116, 116);
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .information, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .chat-box {
+        font-size: 12px;
+        padding: 8px 16px;
+        border-radius: 20px;
+    }
+}
+    

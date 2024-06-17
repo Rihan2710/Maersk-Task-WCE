@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craftify - Fashion Within</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets1/c.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style-prefix.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - HEADER
+  -->
+
+    <header>
+      <div class="header-main">
+        <div class="container">
+          <a href="#" class="header-logo">
+           <h1>Craftify</h1>
+          </a>
+
+          <div class="header-search-container">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Enter your product name..."
+            />
+
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="header-user-actions">
+            <button class="action-btn">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="desktop-navigation-menu">
+        <div class="container">
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="./index.html" class="menu-title">Home</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="./products.html" class="menu-title">Products</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="./contacts.html" class="menu-title">Contact </a>
+            </li>
+
+        
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mobile-bottom-navigation">
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+
+          <span class="count">0</span>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+
+          <span class="count">0</span>
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+      </div>
+
+      <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Men's</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Shirt</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Shorts & Jeans</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Safety Shoes</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Wallet</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Women's</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Dress & Frock</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Earrings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Necklace</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Makeup Kit</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Jewelry</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Earrings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Couple Rings</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Necklace</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Bracelets</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Perfume</p>
+
+              <div>
+                <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Clothes Perfume</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Deodorant</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Flower Fragrance</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Air Freshener</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+        </ul>
+
+        <div class="menu-bottom">
+          <ul class="menu-category-list">
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Language</p>
+
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">English</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Fren&ccedil;h</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Currency</p>
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">USD &dollar;</a>
+                </li>
+
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">EUR &euro;</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="menu-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+      <!--
+      - BANNER
+    -->
+
+      <div class="banner">
+        <div class="container">
+          <div class="slider-container has-scrollbar">
+            <div class="slider-item">
+              <img
+                src="./assets1/b1.png"
+                alt="crafts making"
+                class="banner-img"
+              />
+
+              <div class="banner-content">
+                <p class="banner-subtitle">Trending products</p>
+
+                <h2 class="banner-title">Decor</h2>
+
+                <p class="banner-text">starting at &dollar; <b>20</b>.00</p>
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <img
+                src="./assets1/beautiful-spring-wallpaper-with-carnation.jpg"
+                alt="modern sunglasses"
+                class="banner-img"
+              />
+
+              <div class="banner-content">
+                <p class="banner-subtitle">Trending decors</p>
+
+                <h2 class="banner-title">Modern designs</h2>
+
+                <p class="banner-text">starting at &dollar; <b>15</b>.00</p>
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div>
+            </div>
+<!-- top-view-engagement-rings-with-copy-space.jpg -->
+            <div class="slider-item">
+              <img
+                src="./assets1/tp (3).jpg"
+                alt="new fashion summer sale"
+                class="banner-img"
+              />
+
+              <div class="banner-content">
+                <p class="banner-subtitle">Sale Offer</p>
+
+                <h2 class="banner-title">New category sale</h2>
+
+                <!-- <p class="banner-text">starting at &dollar; <b>29</b>.99</p> -->
+
+                <a href="#" class="banner-btn">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - CATEGORY
+    -->
+
+      <div class="category">
+        <div class="container">
+          <div class="category-item-container has-scrollbar">
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/house.png"
+                  alt="House Decor"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">House Decor</h3>
+
+                  <p class="category-item-amount">(53)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/wood.png"
+                  alt="blocks"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Block Printing</h3>
+
+                  <p class="category-item-amount">(58)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/chisel.png"
+                  alt="glasses & marble"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Marble & Glass Art</h3>
+
+                  <p class="category-item-amount">(68)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/paper-crafts.png"
+                  alt="crafts"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Crafts</h3>
+
+                  <p class="category-item-amount">(84)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/horseman.png"
+                  alt="brass"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Brass Engraving</h3>
+
+                  <p class="category-item-amount">(35)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/pottery.png"
+                  alt="pottery"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Pottery</h3>
+
+                  <p class="category-item-amount">(16)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/clothes.png"
+                  alt="stole"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Stoles</h3>
+
+                  <p class="category-item-amount">(27)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div class="category-img-box">
+                <img
+                  src="./assets1/embroidery.png"
+                  alt="embroidery"
+                  width="30"
+                />
+              </div>
+
+              <div class="category-content-box">
+                <div class="category-content-flex">
+                  <h3 class="category-item-title">Embroidery</h3>
+
+                  <p class="category-item-amount">(39)</p>
+                </div>
+
+                <a href="#" class="category-btn">Show all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - PRODUCT
+    -->
+
+      <div class="product-container">
+        <div class="container">
+          <!--
+          - SIDEBAR
+        -->
+
+          <div class="sidebar has-scrollbar" data-mobile-menu>
+            <div class="sidebar-category">
+              <div class="sidebar-top">
+                <h2 class="sidebar-title">Category</h2>
+
+                <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+
+              <ul class="sidebar-menu-category-list">
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/house.png"
+                        alt="clothes"
+                        width="20"
+                        height="20"
+                        class="menu-title-img"
+                      />
+
+                      <p class="menu-title">House Decor</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Shirt</p>
+                        <data value="300" class="stock" title="Available Stock"
+                          >300</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">shorts & jeans</p>
+                        <data value="60" class="stock" title="Available Stock"
+                          >60</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">jacket</p>
+                        <data value="50" class="stock" title="Available Stock"
+                          >50</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">dress & frock</p>
+                        <data value="87" class="stock" title="Available Stock"
+                          >87</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/wood.png"
+                        alt="footwear"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Block Printing</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Sports</p>
+                        <data value="45" class="stock" title="Available Stock"
+                          >45</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Formal</p>
+                        <data value="75" class="stock" title="Available Stock"
+                          >75</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Casual</p>
+                        <data value="35" class="stock" title="Available Stock"
+                          >35</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Safety Shoes</p>
+                        <data value="26" class="stock" title="Available Stock"
+                          >26</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/chisel.png"
+                        alt="clothes"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Marble & Glass Art</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Earrings</p>
+                        <data value="46" class="stock" title="Available Stock"
+                          >46</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Couple Rings</p>
+                        <data value="73" class="stock" title="Available Stock"
+                          >73</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Necklace</p>
+                        <data value="61" class="stock" title="Available Stock"
+                          >61</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/paper-crafts.png"
+                        alt="perfume"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Crafts</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Clothes Perfume</p>
+                        <data value="12" class="stock" title="Available Stock"
+                          >12 pcs</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Deodorant</p>
+                        <data value="60" class="stock" title="Available Stock"
+                          >60 pcs</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">jacket</p>
+                        <data value="50" class="stock" title="Available Stock"
+                          >50 pcs</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">dress & frock</p>
+                        <data value="87" class="stock" title="Available Stock"
+                          >87 pcs</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/horseman.png"
+                        alt="cosmetics"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Brass Engraving</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Shampoo</p>
+                        <data value="68" class="stock" title="Available Stock"
+                          >68</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Sunscreen</p>
+                        <data value="46" class="stock" title="Available Stock"
+                          >46</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Body Wash</p>
+                        <data value="79" class="stock" title="Available Stock"
+                          >79</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Makeup Kit</p>
+                        <data value="23" class="stock" title="Available Stock"
+                          >23</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/pottery.png"
+                        alt="glasses"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Pottery</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Sunglasses</p>
+                        <data value="50" class="stock" title="Available Stock"
+                          >50</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Lenses</p>
+                        <data value="48" class="stock" title="Available Stock"
+                          >48</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <button class="sidebar-accordion-menu" data-accordion-btn>
+                    <div class="menu-title-flex">
+                      <img
+                        src="./assets1/clothes.png"
+                        alt="bags"
+                        class="menu-title-img"
+                        width="20"
+                        height="20"
+                      />
+
+                      <p class="menu-title">Stoles</p>
+                    </div>
+
+                    <div>
+                      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                      <ion-icon
+                        name="remove-outline"
+                        class="remove-icon"
+                      ></ion-icon>
+                    </div>
+                  </button>
+
+                  <ul class="sidebar-submenu-category-list" data-accordion>
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Shopping Bag</p>
+                        <data value="62" class="stock" title="Available Stock"
+                          >62</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Gym Backpack</p>
+                        <data value="35" class="stock" title="Available Stock"
+                          >35</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Purse</p>
+                        <data value="80" class="stock" title="Available Stock"
+                          >80</data
+                        >
+                      </a>
+                    </li>
+
+                    <li class="sidebar-submenu-category">
+                      <a href="#" class="sidebar-submenu-title">
+                        <p class="product-name">Wallet</p>
+                        <data value="75" class="stock" title="Available Stock"
+                          >75</data
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-showcase">
+              <h3 class="showcase-heading">best sellers</h3>
+
+              <div class="showcase-wrapper">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img
+                        src="./assets1/clock.jpg"
+                        alt="baby fabric shoes"
+                        width="75"
+                        height="75"
+                        class="showcase-img"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Golden Wall Clock</h4>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>$5.00</del>
+                        <p class="price">$4.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img
+                        src="./assets1/statue.jpg"
+                        alt="men's hoodies t-shirt"
+                        class="showcase-img"
+                        width="75"
+                        height="75"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Divine Trinity Brass Dattatreya Accent</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>$17.00</del>
+                        <p class="price">$7.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img
+                        src="./assets1/rug.jpg"
+                        alt="girls t-shirt"
+                        class="showcase-img"
+                        width="75"
+                        height="75"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Aabidah Embroidered Rug</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>$5.00</del>
+                        <p class="price">$3.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img
+                        src="./assets1/bed.jpg"
+                        alt="woolen hat for men"
+                        class="showcase-img"
+                        width="75"
+                        height="75"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Khimsar Block Print Double Bedsheet With Pillow Covers</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <del>$15.00</del>
+                        <p class="price">$12.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-box">
+            <!--
+            - PRODUCT MINIMAL
+          -->
+
+            <div class="product-minimal">
+              <div class="product-showcase">
+                <h2 class="title">New Arrivals</h2>
+
+                <div class="showcase-wrapper has-scrollbar">
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n1.jpg"
+                          alt="relaxed short full sleeve t-shirt"
+                          width="70"
+                          class="showcase-img"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Abari Block Print Table Cover - 6 Seater
+                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$45.00</p>
+                          <del>$12.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n2.jpg"
+                          alt="girls pink embro design top"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Playful Blessings Brass Engraved Jhoola                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Engraving</a>
+
+                        <div class="price-box">
+                          <p class="price">$61.00</p>
+                          <del>$9.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n3.jpg"
+                          alt="black floral wrap midi skirt"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Ignis Wine Glass ( Set Of 2 )
+                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Pottery</a>
+
+                        <div class="price-box">
+                          <p class="price">$76.00</p>
+                          <del>$25.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n4.jpg"
+                          alt="pure garment dyed cotton shirt"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Around The Tree Of Life - Ivory ( 14in X 11in )                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Printing</a>
+
+                        <div class="price-box">
+                          <p class="price">$68.00</p>
+                          <del>$31.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n5.jpg"
+                          alt="men yarn fleece full-zip jacket"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Virag Relief Work ( 9.5 In X 7.5 In )                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Printing</a>
+
+                        <div class="price-box">
+                          <p class="price">$61.00</p>
+                          <del>$11.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n6.jpg"
+                          alt="mens winter leathers jackets"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Multi Use Cutlery Stand                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$32.00</p>
+                          <del>$20.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n7.jpg"
+                          alt="mens winter leathers jackets"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Enchanting Reflection Mirror                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$50.00</p>
+                          <del>$25.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/n8.jpg"
+                          alt="better basics french terry sweatshorts"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Light Of Love Table Lamp                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$20.00</p>
+                          <del>$10.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-showcase">
+                <h2 class="title">Trending</h2>
+
+                <div class="showcase-wrapper has-scrollbar">
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t1.jpg"
+                          alt="running & trekking shoes - white"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Blooming Beauty Marble Candle Stand
+                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$49.00</p>
+                          <del>$15.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t2.jpg"
+                          alt="trekking & running shoes - black"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Nature's Serenade Marble Hand Painted Table Clock                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$78.00</p>
+                          <del>$36.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t3.jpg"
+                          alt="womens party wear shoes"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Christmas Tree Ornament                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Crafts</a>
+
+                        <div class="price-box">
+                          <p class="price">$94.00</p>
+                          <del>$42.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t4.jpg"
+                          alt="sports claw women's shoes"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Starry Night Tealight Candle Holder                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$54.00</p>
+                          <del>$65.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t5.jpg"
+                          alt="air tekking shoes - white"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Christmas Decorative Plate                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Crafts</a>
+
+                        <div class="price-box">
+                          <p class="price">$52.00</p>
+                          <del>$55.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t6.jpg"
+                          alt="Boot With Suede Detail"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">Delicate Blossom Marble Ashtray</h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$20.00</p>
+                          <del>$30.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t7.jpg"
+                          alt="men's leather formal wear shoes"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Christmas Decorative Platter
+                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Crafts</a>
+
+                        <div class="price-box">
+                          <p class="price">$56.00</p>
+                          <del>$78.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/t8.jpg"
+                          alt="casual men's brown shoes"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Yahya Ajrakh Cushion Cover ( 16" X 16")                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Printing</a>
+
+                        <div class="price-box">
+                          <p class="price">$50.00</p>
+                          <del>$55.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-showcase">
+                <h2 class="title">Top Rated</h2>
+
+                <div class="showcase-wrapper has-scrollbar">
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r1.jpg"
+                          alt="pocket watch leather pouch"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Kalon Labradorite Pendant                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Pendent</a>
+
+                        <div class="price-box">
+                          <p class="price">$50.00</p>
+                          <del>$34.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r2.jpg"
+                          alt="silver deer heart necklace"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Fargin Labradorite Ring                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Jewellery</a>
+
+                        <div class="price-box">
+                          <p class="price">$84.00</p>
+                          <del>$30.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r3.jpg"
+                          alt="titan 100 ml womens perfume"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Artsy Multi-Colored Tray Table (Foldable)                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Art</a>
+
+                        <div class="price-box">
+                          <p class="price">$42.00</p>
+                          <del>$10.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r4.jpg"
+                          alt="men's leather reversible belt"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Dusk To Dawn Vase
+                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Pottery</a>
+
+                        <div class="price-box">
+                          <p class="price">$24.00</p>
+                          <del>$10.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r5.jpg"
+                          alt="platinum zircon classic ring"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Afterglow Table Lamp                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">House Decor</a>
+
+                        <div class="price-box">
+                          <p class="price">$62.00</p>
+                          <del>$65.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r6.jpg"
+                          alt="smart watche vital plus"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Govardhan Wall Plate                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Printing</a>
+
+                        <div class="price-box">
+                          <p class="price">$56.00</p>
+                          <del>$78.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r7.jpg"
+                          alt="shampoo conditioner packs"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Circular Platter With Layers                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Art</a>
+
+                        <div class="price-box">
+                          <p class="price">$20.00</p>
+                          <del>$30.00</del>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets1/r8.jpg"
+                          alt="rose gold peacock earrings"
+                          class="showcase-img"
+                          width="70"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">
+                            Multi Use Cutlery Stand                          </h4>
+                        </a>
+
+                        <a href="#" class="showcase-category">Art</a>
+
+                        <div class="price-box">
+                          <p class="price">$20.00</p>
+                          <del>$30.00</del>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--
+            - PRODUCT FEATURED
+          -->
+
+            <div class="product-featured">
+              <h2 class="title">Featured Section</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <div class="showcase-banner">
+                      <img
+                        src="./assets1/f1.jpg"
+                        alt="shampoo, conditioner & facewash packs"
+                        class="showcase-img"
+                      />
+                    </div>
+
+                    <div class="showcase-content">
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </div>
+
+                      <a href="#">
+                        <h3 class="showcase-title">
+                          Bhola Baby Ganesha (Brass)                        </h3>
+                      </a>
+
+                      <p class="showcase-desc">
+                        This beautiful baby Ganesha in brass serves as a beautiful symbol of divinity, wisdom, and prosperity. Placing this piece in your home or office can create a serene and sacred ambiance, reminding you of the blessings and guidance that Lord Ganesha brings.
+                      </p>
+
+                      <div class="price-box">
+                        <p class="price">$150.00</p>
+
+                        <del>$200.00</del>
+                      </div>
+
+                      <button class="add-cart-btn">add to cart</button>
+
+                      <div class="showcase-status">
+                        <div class="wrapper">
+                          <p>already sold: <b>20</b></p>
+
+                          <p>available: <b>40</b></p>
+                        </div>
+
+                        <div class="showcase-status-bar"></div>
+                      </div>
+
+                      <div class="countdown-box">
+                        <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                        <div class="countdown">
+                          <div class="countdown-content">
+                            <p class="display-number">360</p>
+
+                            <p class="display-text">Days</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">24</p>
+                            <p class="display-text">Hours</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">59</p>
+                            <p class="display-text">Min</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">00</p>
+                            <p class="display-text">Sec</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <div class="showcase-banner">
+                      <img
+                        src="./assets1/f2.jpg"
+                        alt="Rose Gold diamonds Earring"
+                        class="showcase-img"
+                      />
+                    </div>
+
+                    <div class="showcase-content">
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </div>
+
+                      <h3 class="showcase-title">
+                        <a href="#" class="showcase-title"
+                          >Jahanara Royal Earrings</a
+                        >
+                      </h3>
+
+                      <p class="showcase-desc">
+                        Delve into the multi-layered history of Rajasthan's immaculate craft as each part of this pair of earrings explodes with surprises and a story of its own.
+                      </p>
+
+                      <div class="price-box">
+                        <p class="price">$1990.00</p>
+                        <del>$2000.00</del>
+                      </div>
+
+                      <button class="add-cart-btn">add to cart</button>
+
+                      <div class="showcase-status">
+                        <div class="wrapper">
+                          <p>already sold: <b>15</b></p>
+
+                          <p>available: <b>40</b></p>
+                        </div>
+
+                        <div class="showcase-status-bar"></div>
+                      </div>
+
+                      <div class="countdown-box">
+                        <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+
+                        <div class="countdown">
+                          <div class="countdown-content">
+                            <p class="display-number">360</p>
+                            <p class="display-text">Days</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">24</p>
+                            <p class="display-text">Hours</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">59</p>
+                            <p class="display-text">Min</p>
+                          </div>
+
+                          <div class="countdown-content">
+                            <p class="display-number">00</p>
+                            <p class="display-text">Sec</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--
+            - PRODUCT GRID
+          -->
+
+         
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+    </main>
+
+
+
+    <footer>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <ul class="header-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html> 
